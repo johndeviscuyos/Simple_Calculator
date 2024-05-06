@@ -1,3 +1,5 @@
+import pyfiglet
+
 #Ask the user if the operation is Addition, Subtraction, Multiplication and Division.
 print("Welcome to the Simple Calculator")
 print("This calculator will help you in simple Addition, Subtraction, Multiplication or Division")
@@ -14,15 +16,31 @@ while True:
             if operation == 'A':
                 result = first_number + second_number
                 print ("The result is: ", result)
+                art_text = pyfiglet.figlet_format(text=str(result),
+                                                  font="slant")
+
+                print(art_text)
             if operation == 'S':
                 result = first_number - second_number
                 print ("The result is:", result)
+                art_text = pyfiglet.figlet_format(text=str(result),
+                                                  font="slant")
+
+                print(art_text)
             if operation == 'M':
                 result = first_number * second_number
                 print ("The result is:", result)
+                art_text = pyfiglet.figlet_format(text=str(result),
+                                                  font="slant")
+
+                print(art_text)
             if operation == 'D':
                 result = first_number / second_number
                 print("The result is ", result)
+                art_text = pyfiglet.figlet_format(text=str(result),
+                                                  font="slant")
+
+                print(art_text)
         else:
             print("Invalid input please try again")
     #Show an exception if user inputs an integer.
@@ -36,3 +54,5 @@ while True:
     try_again = str(input("Do you want to try again? Y/N: "))
     if try_again != 'Y':
         break
+
+
