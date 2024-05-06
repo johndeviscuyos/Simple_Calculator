@@ -22,9 +22,12 @@ try:
         if operation == 'D':
             result = first_number / second_number
             print("The result is ", result)
+    else:
+        print("Invalid input please try again")
 #Show an exception if user inputs an integer.
 except ValueError:
     print("Invalid input please try again")
-
+except ZeroDivisionError:
+    print("You are dividing by zero")
 #Show an exception if user inputs a string.
 #Ask the user if he/she wants to try it again.
