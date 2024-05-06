@@ -9,12 +9,22 @@ try:
         first_number = float(input("Enter the first number: "))
         #Ask the user to enter the second number
         second_number = float(input("Enter the second number"))
-
+        #show the result
+        if operation == 'A':
+            result = first_number + second_number
+            print ("The result is: ", result)
+        if operation == 'S':
+            result = first_number - second_number
+            print ("The result is:", result)
+        if operation == 'M':
+            result = first_number * second_number
+            print ("The result is:", result)
+        if operation == 'D':
+            result = first_number / second_number
+            print("The result is ", result)
 #Show an exception if user inputs an integer.
 except ValueError:
     print("Invalid input please try again")
-#Ask the user to enter the first number.
-#Ask the user to enter the second number.
+
 #Show an exception if user inputs a string.
-#Show the result.
 #Ask the user if he/she wants to try it again.
